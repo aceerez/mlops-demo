@@ -16,5 +16,5 @@ SERVER_IP=$(hostname -I | awk '{print $1}')
 
 # Print the IP addresses and URLs
 echo "Server IP: $SERVER_IP"
-echo "Grafana: http://$SERVER_IP:3001/d/cdmjozaykvd34f/"
+echo "Grafana: http://$SERVER_IP:3001//d/cdmjozaykvd34f/mlops?orgId=1&refresh=5s"
 echo "API: http://$SERVER_IP:5000"
