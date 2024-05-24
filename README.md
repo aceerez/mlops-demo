@@ -7,8 +7,10 @@ Deploy a pre-trained machine learning model as a RESTful API service and set up 
 3.	Logging Setup
 4.	Monitoring Setup
 ## Prerequisites
+* Linux system with bash (e.g., Ubuntu)
 * Docker: Ensure Docker is installed on your system.
 * Docker Compose: Ensure Docker Compose is installed on your system
+
 ## Steps to Build and Run the Application
 
 1. clone the porject to your server
