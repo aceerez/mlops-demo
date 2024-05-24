@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  flask-app:
+    build: .
+    container_name: flask-app
+    ports:
+      - "5000:5000"
+      - "3100:3100"
+    # volumes:
+    #   - .:/app
+
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ../prometheus.yml:/etc/prometheus/prometheus.yml
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    ports:
+      - "3001:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - PROMETHEUS_URL=http://prometheus:9090
+    volumes:
+      #- ../grafana/data:/var/lib/grafana
+      - ../grafana/grafana-provisioning:/etc/grafana/provisioning
+      - ../grafana/grafana-provisioning/dashboards:/var/lib/grafana/dashboards
+      - ../grafana/grafana-provisioning/alerting:/etc/grafana/provisioning/alerting 
+
+volumes:
+  prometheus_data:
+  grafana-storage:
