@@ -46,7 +46,7 @@ to close the app, run the stop-app.sh
 ```bash stop-app.sh```
 
 ## Testing the App
-inside the test_app folder, run the test.py script 
+inside the for_test folder, run the test.py script 
 
 ``` python3 test.py ```
 
