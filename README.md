@@ -17,7 +17,7 @@ Deploy a pre-trained machine learning model as a RESTful API service and set up 
    
    ``` git clone https://github.com/aceerez/mlops-demo.git```
 
-2. run the script start.sh to start the FlaskApi App and the Monitor tool 
+2. Enter the project directory and run the script start.sh to start the FlaskApi App and the Monitor tool 
    
 ```bash start.sh ```
 
