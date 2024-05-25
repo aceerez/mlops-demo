@@ -49,7 +49,7 @@ Password: admin
 ### 4. Viewing Logs and Metrics:
 * Each panel on the dashboard has a name indicating the logs or metrics it monitors.
 
-## Shutoff the App
+## Shutdown the App
 to close the app, run the stop-app.sh
 ```bash stop-app.sh```
 
