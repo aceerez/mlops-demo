@@ -32,14 +32,22 @@ Replace path_to_your_image.jpg with the path to the image you want to use for pr
 
 ## Using the Monitoring Tool
 Use the Grafana address to enter the monitoring tool to monitor the app.
-1. Enter the address from your local browser (needs to be on the same VLAN as the server or have access to it).
-2. Enter the login credentials:
+
+ ### 1. Access Grafana
+   * Open your local browser and enter the Grafana address (ensure your device is on the same VLAN as the server or has access to it).
+### 2. Login
+* Enter the login credentials:
 ```
 Username: admin
 Password: admin
 ```
-4. On the first login, you will be prompted to change your password.
-5. Each panel has a name indicating the logs it monitors.
+* On the first login, you will be prompted to change your password.
+### 3. Navigate to the Dashboard:
+* Press the Dashboard button from the left side menu.
+* Under Name, press MLOps. This will take you to the App dashboard.
+* After the first login. the link provided in the app will take you to dashboard directly 
+### 4. Viewing Logs and Metrics:
+* Each panel on the dashboard has a name indicating the logs or metrics it monitors.
 
 ## closing the App
 to close the app, run the stop-app.sh
