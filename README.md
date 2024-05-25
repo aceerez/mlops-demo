@@ -54,8 +54,31 @@ to close the app, run the stop-app.sh
 ```bash stop-app.sh```
 
 ## Testing the App
-inside the for_test folder, run the test.py script 
+This Python script is designed to test the functionality and robustness of a Flask API endpoint that serves a machine learning model. The script performs the following actions:
 
-``` python3 test.py ```
+### Actions Performed:
+#### 1. Valid Requests:
 
-this script test the api and create logs for Grafana to monitor. 
+* Sends multiple valid image files to the API endpoint.
+* Prints the status code and response for each request.
+#### 2. Missing File Requests:
+
+* Sends POST requests without any file attached.
+* Prints the status code and response for each request.
+#### 3. Invalid File Requests:
+
+* Sends POST requests with invalid file types (e.g., text files).
+* Prints the status code and response for each request.
+### Configuration:
+* URL: The URL of the Flask API endpoint.
+* Images Folder: Path to the folder containing the image files to be tested.
+* Delay: Time delay (in seconds) between consecutive requests.
+* Repeat Count: Number of times to repeat the valid requests for all images.
+### Usage:
+1. Ensure the Flask API is running locally.
+2. Use the provided images or update the images_folder variable with the correct path to the folder containing your image files.
+3. Run the script using Python:
+```
+python3 test_script.py
+```
+4. If you are running the script from the same server where the Flask app is running, leave the URL unchanged. If running the test from another server, update the URL based on the address provided when the app started.
