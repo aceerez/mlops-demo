@@ -45,11 +45,11 @@ Password: admin
 ### 3. Navigate to the Dashboard:
 * Press the Dashboard button from the left side menu.
 * Under Name, press MLOps. This will take you to the App dashboard.
-* After the first login. the link provided in the app will take you to dashboard directly 
+* After the first login. the link provided in the app will take you to the dashboard directly 
 ### 4. Viewing Logs and Metrics:
 * Each panel on the dashboard has a name indicating the logs or metrics it monitors.
 
-## closing the App
+## Shutoff the App
 to close the app, run the stop-app.sh
 ```bash stop-app.sh```
 
